@@ -54,8 +54,63 @@ b = False
 # Contoh penulisan boolean yang salah
 # Jika dijalankan, pada baris ini akan error
 # c = true
-print(c)
+# print(c)
 
 
+
+
+# Operator aritmatika
+a = 4
+b = 2
+c = a + b    # Penjumlahan
+d = a - b    # Pengurangan
+e = a * b    # Perkalian
+f = a / b    # Pembagian
+g = a % b    # Modulus
+h = a ** b   # Eksponensial
+
+print(c) # 6
+print(d) # 2
+print(e) # 8
+print(f) # 2.0
+print(g) # 0
+print(h) # 16
+
+
+# Operator perbandingan
+a = 3
+b = 5
+c = a == b   # sama dengan
+d = a != b   # tidak sama dengan
+e = a < b    # lebih kecil
+f = a <= b   # lebih kecil sama dengan
+g = a > b    # lebih besar
+h = a >= b   # lebih besar sama dengan
+
+print(c) # False
+print(d) # True
+print(e) # True
+print(f) # True
+print(g) # False
+print(h) # False
+
+
+# Operator logika
+a = 3
+b = 9
+
+# and
+print(a < 5 and b > 6) # True
+print(a < 5 and b < 6) # False
+print(a > 5 and b < 6) # False
+
+# or
+print(a < 5 or b > 6) # True
+print(a < 5 or b < 6) # True
+print(a > 5 or b < 6) # False
+
+# not
+print(not(a < 5 or b > 6)) # False
+print(not(a > 5 or b < 6)) # True
 
 
