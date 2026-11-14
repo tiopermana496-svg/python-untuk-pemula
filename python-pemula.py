@@ -114,3 +114,44 @@ print(not(a < 5 or b > 6)) # False
 print(not(a > 5 or b < 6)) # True
 
 
+
+
+
+"""
+Note:
+Penulisan kode di dalam blok atau scope pada Python bergantung pada
+indentation (spasi di awal baris).
+"""
+
+# Penulisan yang benar:
+if(True):
+    print("Benar.")
+
+x = 5
+y = 10
+
+if(x < y):
+    print("nilai x lebih kecil dari y.") # dijalankan
+
+if(x > y):
+    print("nilai x lebih besar dari y.") # tidak dijalankan
+
+
+# if - elif
+a = 80
+
+if(a > 90):
+    print("Dapat nilai A.") # tidak dijalankan
+elif(a > 70):
+    print("Dapat nilai B.") # dijalankan
+
+
+# if - elif - else
+a = 60
+
+if(a > 90):
+    print("Dapat nilai A.") # tidak dijalankan
+elif(a > 70):
+    print("Dapat nilai B.") # tidak dijalankan
+else:
+    print("Dapat nilai C.") # dijalankan
