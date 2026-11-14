@@ -352,3 +352,45 @@ def belajar_python(name="Alien"):
     print("Halo, Saya %s" % name)
 
 belajar_python() # Halo, Saya Alien
+
+
+
+
+
+# Class dengan property
+class Cat:
+    color = "black"
+
+cat1 = Cat()
+print(cat1.color) # black
+
+
+# Class dengan constructor
+class Cat:
+    color = "black"
+
+    def __init__(self, color):
+        self.color = color
+
+cat1 = Cat("orange")
+print(cat1.color) # orange
+
+
+# Class dengan method
+class Cat:
+    def say(self):
+        print("Meong..meong")
+
+cat1 = Cat()
+cat1.say() # Meong..meong
+
+
+# Parameter self bisa diberi nama lain
+class Cat:
+    color = "black"
+
+    def say(myParam):
+        print("My color is %s" % myParam.color)
+
+cat1 = Cat()
+cat1.say() # My color is black
