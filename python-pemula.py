@@ -155,3 +155,44 @@ elif(a > 70):
     print("Dapat nilai B.") # tidak dijalankan
 else:
     print("Dapat nilai C.") # dijalankan
+
+
+
+
+
+
+# Mencetak kata "Halo Python" sebanyak 5 kali
+for x in range(5):
+    print("Halo Python.")
+
+
+# Mencetak semua item pada list fruits
+fruits = ['Apple', 'Banana', 'Mango', 'Durian']
+for fruit in fruits:
+    print(fruit)
+
+# Mencetak semua huruf pada kata "indonesia"
+myCountry = "indonesia"
+for x in myCountry:
+    print(x)
+
+
+# While loop: mencetak angka selama counter lebih kecil dari 5
+counter = 0
+while counter < 5:
+    print(counter)
+    counter += 1
+
+
+# break: hentikan perulangan jika x adalah 3
+for x in range(5):
+    print(x)
+    if x == 3:
+        break
+
+
+# continue: lewati angka genap, hanya cetak angka ganjil
+for x in range(10):
+    if x % 2 == 0:
+        continue
+    print(x)
