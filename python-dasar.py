@@ -10,21 +10,23 @@ print("Versi Python:", sys.version)
 
 
 
-# Bab 3: Tipe Data Dasar
-nama = "Budi"          # str (teks)
-umur = 17              # int (bilangan bulat)
-tinggi = 170.5         # float (bilangan desimal)
-siswa = True           # bool (benar/salah)
 
-print(nama, type(nama))
-print(umur, type(umur))
-print(tinggi, type(tinggi))
-print(siswa, type(siswa))
+# Bab 2: Struktur Dasar Program Python
 
-# Konversi tipe data (casting)
-angka_teks = "25"
-angka = int(angka_teks)
-print(angka + 5)
-print(str(umur) + " tahun")
-print(float(umur))
-print(bool(0), bool(1))
+# Ini adalah komentar satu baris
+"""
+Ini adalah komentar
+beberapa baris (docstring)
+"""
+
+# Menampilkan output dengan print()
+print("Halo, Python!")
+print("Belajar", "Python", "Dasar", sep=" - ")
+
+# Indentasi menentukan blok kode
+if True:
+    print("Indentasi itu penting")
+
+# Meminta input dari pengguna
+# nama = input("Siapa namamu? ")
+# print("Halo,", nama)
