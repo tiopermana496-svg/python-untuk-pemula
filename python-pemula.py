@@ -249,3 +249,52 @@ fruits = ["Apel", "Mangga", "Pisang"]
 otherFruits = ["Durian", "Semangka", "Jeruk"]
 allFruits = fruits + otherFruits
 print(allFruits) # ['Apel', 'Mangga', 'Pisang', 'Durian', 'Semangka', 'Jeruk']
+
+
+
+
+
+
+# Membuat dan mengakses dictionary
+firstPerson = {
+    "first_name": "Hana",
+    "last_name": "Malika",
+    "age": 10
+}
+
+print(firstPerson['first_name']) # Hana
+print(firstPerson.get('age'))    # 10
+print(firstPerson.keys())        # dict_keys(['first_name', 'last_name', 'age'])
+print(firstPerson.values())      # dict_values(['Hana', 'Malika', 10])
+
+
+# Menambahkan item
+firstPerson['weight'] = 12
+print(firstPerson) # {'first_name': 'Hana', 'last_name': 'Malika', 'age': 10, 'weight': 12}
+
+
+# Mengubah item
+firstPerson = {
+    "first_name": "Hana",
+    "last_name": "Malika",
+    "age": 10
+}
+
+firstPerson['age'] = 15                     # cara pertama
+firstPerson.update({"age": 15})             # cara kedua
+firstPerson.update({"hair_color": "black"}) # key baru otomatis ditambahkan
+print(firstPerson) # {'first_name': 'Hana', 'last_name': 'Malika', 'age': 15, 'hair_color': 'black'}
+
+
+# Menghapus item
+firstPerson = {
+    "first_name": "Hana",
+    "last_name": "Malika",
+    "age": 10
+}
+
+firstPerson.pop("age")
+print(firstPerson) # {'first_name': 'Hana', 'last_name': 'Malika'}
+
+firstPerson.clear()
+print(firstPerson) # {}
