@@ -298,3 +298,57 @@ print(firstPerson) # {'first_name': 'Hana', 'last_name': 'Malika'}
 
 firstPerson.clear()
 print(firstPerson) # {}
+
+
+
+
+
+# Function dasar
+def belajar_python():
+    print("Halo")
+
+belajar_python() # Halo
+
+
+# Function dengan satu argument
+def belajar_python(name):
+    print("Halo, Saya %s" % name)
+
+belajar_python("Rizqi") # Halo, Saya Rizqi
+
+
+# Function dengan dua argument
+def belajar_python(name, age):
+    print("Halo, Saya %s. Umur saya %d" % (name, age))
+
+belajar_python("Rizqi", 30) # Halo, Saya Rizqi. Umur saya 30
+
+
+# Arbitrary arguments (*args)
+def belajar_python(*names):
+    for name in names:
+        print("Halo, Saya %s" % name)
+
+belajar_python("Rizqi", "Fika", "Yudi")
+
+
+# Keyword arguments (urutan bebas)
+def belajar_python(name, age):
+    print("Halo, Saya %s. Umur Saya %d" % (name, age))
+
+belajar_python("Rizqi", 30)
+belajar_python(age=25, name="Fika") # Halo, Saya Fika. Umur Saya 25
+
+
+# Arbitrary keyword arguments (**kwargs)
+def belajar_python(**student):
+    print("Halo, Saya %s. Umur Saya %d" % (student['name'], student['age']))
+
+belajar_python(age=20, name="Rizqi") # Halo, Saya Rizqi. Umur Saya 20
+
+
+# Default value
+def belajar_python(name="Alien"):
+    print("Halo, Saya %s" % name)
+
+belajar_python() # Halo, Saya Alien
